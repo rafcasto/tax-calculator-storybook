@@ -1,5 +1,6 @@
 import React from "react";
 import TextField from '@mui/material/TextField';
+import { string } from "prop-types";
 
 interface DefaultInputTextProps {
     id?:string,
@@ -12,5 +13,5 @@ export const DefaultInputText = ({
     id,
     label,
     variant='standard',...props}:DefaultInputTextProps) => {
-    return (<TextField  fullWidth  id={id} label={label} variant={variant} />)
+    return (<TextField  fullWidth data-testid={id}  id={id} label={label} variant={variant} />)
 } 
